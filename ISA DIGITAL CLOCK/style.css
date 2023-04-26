@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 3rem;
+    background-color:lightblue;
+  }
+  
+  #hours,
+  #minutes,
+  #seconds,
+  #session {
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    background-color:yellow;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  }
+  
+  #session {
+    margin-right: 1rem;
+  }
+  
+  #date {
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    #session {
+      margin-right: 0;
+      margin-top: 1rem;
+      
+    }
+  }
+  
